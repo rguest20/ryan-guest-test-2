@@ -1,7 +1,6 @@
 var slideIndex = 1;
 showSlides(slideIndex);
 
-// Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
