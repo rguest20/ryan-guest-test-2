@@ -1,0 +1,265 @@
+/* custom styles here */
+body{
+  font-family: 'Raleway';
+  font-size: 1.5rem;
+  min-width: 400px;
+}
+
+.slideshow{
+  display: flex;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.slideshow-container {
+  width: 75%;
+  height: 500px;
+  position: relative;
+}
+
+.slides {
+  display: none;
+}
+
+.slides img{
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+}
+
+/* Caption text */
+.textcontainer {
+  color: #f2f2f2;
+  font-size: 15px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 40%;
+  backdrop-filter:blur(8px);
+}
+
+.textcontainer h2{
+  font-size: 3rem;
+  font-weight: bold;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-left: 40px;
+}
+
+.textcontainer p{
+  margin-left: 40px;
+  font-size: 1.2rem;
+  margin-right: 35%;
+}
+
+.shopnow{
+  position: absolute;
+  bottom: 0;
+  right:0;
+  width: 25%;
+  height: 50px;
+  background-color: #002e42;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shopnow::before{
+      position: absolute;
+      top: 0;
+      content: '';
+      display: block;
+      background-color: inherit;
+      width: 60px;
+      height: calc(100%);
+      right: calc(100% - 1px);
+      -webkit-clip-path: polygon(100% 0,0% 100%,100% 100%);
+      clip-path: polygon(100% 0,0% 100%,100% 100%);
+}
+
+.shopnowtext{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.shopnow:hover{
+  background-color: green;
+  cursor: pointer;
+}
+
+.active{
+  font-weight: bold;
+  border-left: solid 5px #89cc41;
+  padding-left: 20px;
+}
+
+.menu{
+  padding-top: 80px;
+  width:25%;
+  background-color: lightGray;
+  font-size: 100%;
+}
+
+.menuchoicecontainer{
+  display: flex;
+  height: 80px;
+}
+
+.menuchoice{
+  display: flex;
+  text-align: left;
+  align-items: center;
+}
+
+.menuchoicetext{
+  height: 100%;
+  width: 60%;
+  margin-left: 30px;
+  display: inline-flex;
+}
+
+.menuchoicearrow{
+  display: inline-flex;
+  width: 40px;
+  min-width: 40px;
+  height:2.5rem;
+  margin-left: 5%;
+  padding: 10px 10px 10px 10px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.menuchoicearrow img{
+  height: 100%;
+}
+
+.flipped{
+  background-color: #01a0bc;
+}
+
+.menuchoice:hover, .menuchoicearrow:hover{
+  cursor: pointer;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  display: none;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+  background-color: #717171;
+}
+
+.links{
+  display: flex;
+  width: 90%;
+  margin-top: 40px;
+  margin-left: 5%;
+  font-size: 1.2rem;
+}
+
+.linkbox{
+  display: flex;
+  width:25%;
+  border-right: solid 1px grey;
+}
+
+.no-border{
+  border-right: solid 0px;
+}
+
+.linkicon{
+  padding-left: 40px;
+  display: flex;
+  width: 25%;
+  align-items: center;
+  justify-content: center;
+}
+
+.linkicon i{
+  font-size: 3rem;
+}
+
+.linktext{
+  width: 75%;
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+.linktext a{
+  text-decoration: none;
+  color: black;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.linktext a:hover{
+  border-bottom: solid 3px #89cc41;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 1165px){
+  .menuchoicearrow{
+    display: none;
+  }
+  .flipped{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1035px){
+  .links{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .linkbox{
+    width: 100%;
+    border-right: solid 0px white;
+    border-bottom: solid 1px grey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .textcontainer p{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 885px){
+  .menu{
+    display:none;
+  }
+
+  .slideshow-container{
+    width:100%;
+  }
+
+  .dot{
+    display: inline-block;
+  }
+}
+
+/* Animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>ExtraMile Developer Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- template style sheet -->
+  <link type="text/css" href="css/reset.css" rel="stylesheet">
+  <link type="text/css" href="css/style.css" rel="stylesheet">
+  <!-- load the google font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,600;1,400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/bd9cc32c8d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="slideshow">
+    <div class="slideshow-container">
+      <div class="slides fade">
+        <img src="css\assets\shutterstock_104617415.jpeg">
+        <div class="text">
+          <div class="textcontainer">
+            <div class="caption">
+              <h2>Your trusted fencing supplier</h2>
+              <p>Shop our range of fencing supplies, fence panels, posts and more.</p>
+            </div>
+            <div class="shopnow">
+              <div class="shopnowtext">
+                <h5>SHOP NOW</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slides fade">
+        <img src="css\assets\Durapost-strong-fence-806247A-800x400.jpg">
+        <div class="textcontainer">
+          <div class="caption">
+            <h2>FENCEMATE Durapost Fencing</h2>
+            <p>FENCEMATE Durapost is suitable for virtually all types of timber fence panels.</p>
+          </div>
+          <div class="shopnow">
+            <div class="shopnowtext">
+              <h5>SHOP NOW</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slides fade">
+        <img src="css\assets\shutterstock_602114912-640x400.jpeg">
+        <div class="textcontainer">
+          <div class="caption">
+            <h2>Fencing Accessories</h2>
+            <p>We stock a variety of fencing accessories and tools ideal for virtually any fencing or landscaping project.</p>
+          </div>
+          <div class="shopnow">
+            <div class="shopnowtext">
+              <h5>SHOP NOW</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slides fade">
+        <img src="css\assets\shutterstock_602114912-640x400.jpeg">
+        <div class="textcontainer">
+          <div class="caption">
+            <h2>Fencing Accessories</h2>
+            <p>We stock a variety of fencing accessories and tools ideal for virtually any fencing or landscaping project.</p>
+          </div>
+          <div class="shopnow">
+            <div class="shopnowtext">
+              <h5>SHOP NOW</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="menu">
+      <div class="menuchoicecontainer">
+        <div class="menuchoicetext">
+          <p class="menuchoice" onclick="currentSlide(1)">Grangewood<br> Fencing</p>
+        </div>
+        <div class="menuchoicearrow" onclick="currentSlide(1)">
+          <img src="css\assets\arrow-retina.png" alt="arrow">
+        </div>
+      </div>
+      <div class="menuchoicecontainer">
+        <div class="menuchoicetext">
+          <p class="menuchoice" onclick="currentSlide(2)">FENCEMATE <br>Durapost Fencing</p>
+        </div>
+        <div class="menuchoicearrow" onclick="currentSlide(2)">
+          <img src="css\assets\arrow-retina.png" alt="arrow">
+        </div>
+      </div>
+      <div class="menuchoicecontainer">
+        <div class="menuchoicetext">
+          <p class="menuchoice" onclick="currentSlide(3)">Reclaimed <br>Sleepers</p>
+        </div>
+        <div class="menuchoicearrow" onclick="currentSlide(3)">
+          <img src="css\assets\arrow-retina.png" alt="arrow">
+        </div>
+      </div>
+      <div class="menuchoicecontainer">
+        <div class="menuchoicetext">
+          <p class="menuchoice" onclick="currentSlide(4)">Fencing <br>Accessories</p>
+        </div>
+        <div class="menuchoicearrow" onclick="currentSlide(4)">
+          <img src="css\assets\arrow-retina.png" alt="arrow">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dots">
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+  </div>
+  <div class="links">
+    <div class="linkbox">
+      <div class="linkicon">
+        <i class="fas fa-map-marked"></i>
+      </div>
+      <div class="linktext">
+        <h3>Find Your Local Depot</h3>
+        <p><a href="#">DEPOT FINDER</a></p>
+      </div>
+    </div>
+    <div class="linkbox">
+      <div class="linkicon">
+        <i class="fas fa-comments"></i>
+      </div>
+      <div class="linktext">
+        <h3>What our customers say</h3>
+        <p><a href="#">VIEW TESTIMONIALS</a></p>
+      </div>
+    </div>
+    <div class="linkbox">
+      <div class="linkicon">
+        <i class="fas fa-truck"></i>
+      </div>
+      <div class="linktext">
+        <h3>We can come to you</h3>
+        <p><a href="#">DELIVERY</a></p>
+      </div>
+    </div>
+    <div class="linkbox no-border">
+      <div class="linkicon">
+        <i class="fas fa-envelope-open"></i>
+      </div>
+      <div class="linktext">
+        <h3>Got a query or quote request</h3>
+        <p><a href="#">CONTACT US</a></p>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
